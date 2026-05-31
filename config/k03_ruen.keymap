@@ -12,6 +12,32 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            hold-trigger-key-positions = <25 26 27 28>;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            hold-trigger-key-positions = <31 32 33 34>;
+        };
     };
 
     combos {
@@ -91,11 +117,11 @@
 
         en {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2     &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7    &kp N8     &kp N9     &kp N0    &kp BSPC
-&kp TAB    &kp Q   &kp W      &kp F     &kp P     &kp G                           &kp J   &kp L     &kp U      &kp Y      &kp SEMI  &kp BSLH
-&kp ESC    &kp A   &kp R      &kp S     &kp T     &kp D                           &kp H   &kp N     &kp E      &kp I      &kp O     &kp APOS
-&kp LSHFT  &kp Z   &kp X      &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT   &kp K   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-                   &kp LCTRL  &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp ENTER  &to 7   &kp RGUI  &kp RALT   &kp RCTRL
+&kp GRAVE  &kp N1        &kp N2       &kp N3        &kp N4       &kp N5                          &kp N6  &kp N7       &kp N8         &kp N9       &kp N0        &kp BSPC
+&kp TAB    &kp Q         &kp W        &kp F         &kp P        &kp G                           &kp J   &kp L        &kp U          &kp Y        &kp SEMI      &kp BSLH
+&kp ESC    &hml LCTRL A  &hml LALT R  &hml LSHFT S  &hml LGUI T  &kp D                           &kp H   &hmr RGUI N  &hmr RSHIFT E  &hmr RALT E  &hmr RCTRL I  &kp APOS
+&kp LSHFT  &kp Z         &kp X        &kp C         &kp V        &kp B   &kp LBKT     &kp RBKT   &kp K   &kp M        &kp COMMA      &kp DOT      &kp FSLH      &kp RSHFT
+                         &kp LCTRL    &kp LALT      &kp LGUI     &mo 1   &kp SPACE    &kp ENTER  &to 7   &kp RGUI     &kp RALT       &kp RCTRL
             >;
 
             display-name = "Base";
