@@ -123,7 +123,7 @@
 &kp TAB    &kp Q   &kp W      &kp F     &kp P     &kp G                           &kp J   &kp L     &kp U      &kp Y      &kp SEMI  &kp BSLH
 &kp ESC    &kp A   &kp R      &kp S     &kp T     &kp D                           &kp H   &kp N     &kp E      &kp I      &kp O     &kp APOS
 &kp LSHFT  &kp Z   &kp X      &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT   &kp K   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-                   &kp LCTRL  &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp ENTER  &to 8   &kp RGUI  &kp RALT   &kp RCTRL
+                   &kp LCTRL  &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp ENTER  &mo 8   &kp RGUI  &kp RALT   &kp RCTRL
             >;
 
             display-name = "Base";
