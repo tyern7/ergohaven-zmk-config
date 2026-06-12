@@ -138,7 +138,7 @@
 
         homerow {
             bindings = <
-&trans  &trans            &trans    &trans          &trans            &trans                    &trans  &trans             &trans      &trans    &trans             &trans
+&kp A   &trans            &trans    &trans          &trans            &trans                    &trans  &trans             &trans      &trans    &trans             &trans
 &trans  &to 0             &to 2     &to 3           &to 4             &trans                    &trans  &to 5              &trans      &to 7     &trans             &trans
 &trans  &sk LEFT_CONTROL  &sk LALT  &sk LEFT_SHIFT  &sk LEFT_COMMAND  &trans                    &trans  &sk RIGHT_COMMAND  &sk RSHIFT  &sk RALT  &sk RIGHT_CONTROL  &trans
 &trans  &trans            &trans    &trans          &trans            &trans  &trans    &trans  &trans  &trans             &trans      &trans    &trans             &trans
