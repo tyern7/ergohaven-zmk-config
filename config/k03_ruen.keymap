@@ -66,7 +66,6 @@
         cmben {
             bindings = <&layer_en>;
             key-positions = <15 16>;
-            layers = <4>;
         };
 
         cmbru {
@@ -107,7 +106,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 4 &to_ru>;
+            bindings = <&to 0 &to_ru>;
             label = "LAYER_RU";
             tap-ms = <30>;
             wait-ms = <0>;
@@ -157,7 +156,7 @@
         homerow {
             bindings = <
 &kp A   &trans            &trans    &trans          &trans            &trans                    &trans  &trans             &trans      &trans    &trans             &trans
-&trans  &to 0             &to 2     &to 3           &to 4             &trans                    &trans  &to 5              &trans      &to 7     &trans             &trans
+&trans  &to 0             &to 2     &to 0           &to 0             &trans                    &trans  &to 3              &trans      &to 6     &trans             &trans
 &trans  &sk LEFT_CONTROL  &sk LALT  &sk LEFT_SHIFT  &sk LEFT_COMMAND  &trans                    &trans  &sk RIGHT_COMMAND  &sk RSHIFT  &sk RALT  &sk RIGHT_CONTROL  &trans
 &trans  &trans            &trans    &trans          &trans            &trans  &trans    &trans  &trans  &trans             &trans      &trans    &trans             &trans
                           &trans    &trans          &trans            &trans  &trans    &trans  &trans  &trans             &trans      &trans
@@ -174,36 +173,6 @@
             >;
 
             display-name = "Symbols";
-        };
-
-        ru {
-            display-name = "Ru";
-            bindings = <
-&kp GRAVE  &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                                               &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0               &kp BSPC
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSLH
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RSHFT
-                                    &kp LGUI              &kp LALT            &kp LCTRL           &to 0               &kp SPACE             &kp ENTER                  &mo 1               &kp RCTRL                  &kp RALT             &kp RGUI
-            >;
-
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
-        };
-
-        sym_ru {
-            display-name = "Symbols";
-            bindings = <
-&trans  &trans        &en AT        &en DLLR      &en HASH     &trans                           &trans          &trans    &en CARET    &trans    &trans      &trans
-&trans  &trans        &en LT        &kp EQUAL     &en GT       &en GRAVE                        &trans          &en LBKT  &kp UNDER    &en RBKT  &trans      &trans
-&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
-&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                      &trans        &trans        &trans       &to 0          &trans    &trans  &mo 1           &trans    &trans       &trans
-            >;
         };
 
         nav {
@@ -240,13 +209,33 @@
             >;
         };
 
-        layer_8 {
+        ru {
+            display-name = "Ru";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                                               &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0               &kp BSPC
+&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSLH
+&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RSHFT
+                                    &kp LGUI              &kp LALT            &kp LCTRL           &to 0               &kp SPACE             &kp ENTER                  &mo 1               &kp RCTRL                  &kp RALT             &kp RGUI
+            >;
+
+            sensor-bindings =
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>;
+        };
+
+        sym_ru {
+            display-name = "Symbols";
+            bindings = <
+&trans  &trans        &en AT        &en DLLR      &en HASH     &trans                           &trans          &trans    &en CARET    &trans    &trans      &trans
+&trans  &trans        &en LT        &kp EQUAL     &en GT       &en GRAVE                        &trans          &en LBKT  &kp UNDER    &en RBKT  &trans      &trans
+&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
+&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
+                      &trans        &trans        &trans       &to 0          &trans    &trans  &mo 1           &trans    &trans       &trans
             >;
         };
     };
