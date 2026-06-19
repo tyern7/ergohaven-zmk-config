@@ -136,11 +136,11 @@
 
         en {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2                     &kp N3  &kp N4     &kp N5                                &kp N6                &kp N7           &kp N8     &kp N9   &kp N0    &trans
-&kp TAB    &kp Q   &word_backspace_behaviour  &kp F   &kp P      &kp G                                 &kp J                 &kp L            &kp U      &kp Y    &kp SEMI  &kp BSLH
-&kp ESC    &kp A   &kp R                      &kp S   &kp T      &kp D                                 &backspace_behaviour  &kp N            &kp E      &kp I    &kp O     &kp APOS
-&kp PLUS   &kp Z   &kp X                      &kp C   &kp V      &kp B         &kp LBKT     &kp RBKT   &kp K                 &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
-                   &trans                     &trans  &kp LCTRL  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &kp RIGHT_GUI         &kp RIGHT_SHIFT  &trans     &trans
+&kp GRAVE  &kp N1  &kp N2                     &kp N3  &kp N4    &kp N5                                    &kp N6                &kp N7           &kp N8     &kp N9   &kp N0    &trans
+&kp TAB    &kp Q   &word_backspace_behaviour  &kp F   &kp P     &kp G                                     &kp J                 &kp L            &kp U      &kp Y    &kp SEMI  &kp BSLH
+&kp ESC    &kp A   &kp R                      &kp S   &kp T     &kp D                                     &backspace_behaviour  &kp N            &kp E      &kp I    &kp O     &kp APOS
+&kp PLUS   &kp Z   &kp X                      &kp C   &kp V     &kp B             &kp LBKT     &kp RBKT   &kp K                 &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
+                   &trans                     &trans  &sk LALT  &sk LEFT_CONTROL  &kp SPACE    &kp ENTER  &sk RIGHT_GUI         &sk RIGHT_SHIFT  &trans     &trans
             >;
 
             display-name = "Base";
@@ -177,16 +177,6 @@
             display-name = "Adjust";
         };
 
-        qwerty {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans     &trans   &trans    &trans
-&trans  &kp Q   &kp W   &kp E   &kp R   &kp T                         &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&trans  &kp A   &kp S   &kp D   &kp F   &kp G                         &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B   &kp LBKT    &kp RBKT  &kp N   &kp M   &kp COMMA  &kp DOT  &trans    &trans
-                &trans  &trans  &trans  &to 0   &trans      &trans    &mo 0   &trans  &trans     &trans
-            >;
-        };
-
         ru {
             display-name = "Ru";
             bindings = <
@@ -214,6 +204,16 @@
 &trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
 &trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
                       &trans        &trans        &trans       &to 0          &trans    &trans  &mo 0           &trans    &trans       &trans
+            >;
+        };
+
+        qwerty {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans     &trans   &trans    &trans
+&trans  &kp Q   &kp W   &kp E   &kp R   &kp T                         &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &kp G                         &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
+&trans  &kp Z   &kp X   &kp C   &kp V   &kp B   &kp LBKT    &kp RBKT  &kp N   &kp M   &kp COMMA  &kp DOT  &trans    &trans
+                &trans  &trans  &trans  &to 0   &trans      &trans    &mo 0   &trans  &trans     &trans
             >;
         };
     };
