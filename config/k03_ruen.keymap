@@ -44,7 +44,7 @@
         backspace_behaviour: backspace_behaviour {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_BEHAVIOUR";
-            bindings = <&kp H>, <&kp DELETE>;
+            bindings = <&kp H>, <&kp BACKSPACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
@@ -53,7 +53,7 @@
         word_backspace_behaviour: word_backspace_behaviour {
             compatible = "zmk,behavior-mod-morph";
             label = "WORD_BACKSPACE_BEHAVIOUR";
-            bindings = <&kp W>, <&kp LA(DELETE)>;
+            bindings = <&kp W>, <&kp LA(BACKSPACE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL|MOD_LCTL)>;
