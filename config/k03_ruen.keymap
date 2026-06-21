@@ -237,5 +237,24 @@
 
             display-name = "Symbols";
         };
+
+        layer_7 {
+            display-name = "Base";
+            bindings = <
+&kp GRAVE  &kp LSHFT  &kp W   &kp P   &kp P     &kp G                                     &kp J          &kp L            &kp U      &kp Y    &kp SEMI  &kp BSLH
+&kp TAB    &kp A      &kp R   &kp S   &kp T     &kp D                                     &kp H          &kp N            &kp E      &kp I    &kp O     &kp APOS
+&kp ESC    &kp Z      &kp X   &kp C   &kp V     &kp B                                     &kp K          &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
+&kp PLUS   &trans     &trans  &trans  &trans    &trans            &kp LBKT     &kp RBKT   &trans         &trans           &trans     &trans   &trans    &trans
+                      &trans  &trans  &sk LALT  &sk LEFT_CONTROL  &kp SPACE    &kp ENTER  &sk RIGHT_GUI  &sk RIGHT_SHIFT  &trans     &trans
+            >;
+
+            sensor-bindings =
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>;
+        };
     };
 };
