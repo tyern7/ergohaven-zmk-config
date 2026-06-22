@@ -241,11 +241,11 @@
         layer_7 {
             display-name = "Base";
             bindings = <
-&kp GRAVE  &kp LSHFT  &word_backspace_behaviour  &kp P   &kp P     &kp G                                     &kp J                 &kp L            &kp U      &kp Y    &colon_semicolon  &kp BSLH
-&kp TAB    &kp A      &kp R                      &kp S   &kp T     &kp D                                     &backspace_behaviour  &kp N            &kp E      &kp I    &kp O             &kp APOS
-&kp ESC    &kp Z      &kp X                      &kp C   &kp V     &kp B                                     &kp K                 &kp M            &kp COMMA  &kp DOT  &kp FSLH          &kp MINUS
-&kp PLUS   &trans     &trans                     &trans  &trans    &trans            &kp LBKT     &kp RBKT   &trans                &trans           &trans     &trans   &trans            &trans
-                      &trans                     &trans  &sk LALT  &sk LEFT_CONTROL  &kp SPACE    &kp ENTER  &sk RIGHT_GUI         &sk RIGHT_SHIFT  &trans     &trans
+&trans   &kp LSHFT  &word_backspace_behaviour  &kp P   &kp P     &kp G                                     &kp J                 &kp L            &kp U      &kp Y    &colon_semicolon  &trans
+&kp TAB  &kp A      &kp R                      &kp S   &kp T     &kp D                                     &backspace_behaviour  &kp N            &kp E      &kp I    &kp O             &trans
+&kp ESC  &kp Z      &kp X                      &kp C   &kp V     &kp B                                     &kp K                 &kp M            &kp COMMA  &kp DOT  &trans            &trans
+&trans   &trans     &trans                     &trans  &trans    &trans            &trans       &trans     &trans                &trans           &trans     &trans   &trans            &trans
+                    &trans                     &trans  &sk LALT  &sk LEFT_CONTROL  &kp SPACE    &kp ENTER  &sk RIGHT_GUI         &sk RIGHT_SHIFT  &trans     &trans
             >;
 
             sensor-bindings =
