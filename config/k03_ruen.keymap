@@ -146,8 +146,8 @@
             display-name = "Base";
             bindings = <
 &trans   &kp LSHFT  &word_backspace_behaviour  &kp P   &kp P     &kp G                                     &kp J                 &kp L            &kp U      &kp Y    &colon_semicolon  &trans
-&kp TAB  &kp A      &kp R                      &kp S   &kp T     &kp D                                     &backspace_behaviour  &kp N            &kp E      &kp I    &kp O             &trans
-&kp ESC  &kp Z      &kp X                      &kp C   &kp V     &kp B                                     &kp K                 &kp M            &kp COMMA  &kp DOT  &trans            &trans
+&kp TAB  &kp A      &kp R                      &kp S   &kp T     &kp D                                     &backspace_behaviour  &kp N            &kp E      &kp I    &colon_semicolon  &kp SLASH
+&kp ESC  &kp Z      &kp X                      &kp C   &kp V     &kp B                                     &kp K                 &kp M            &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
 &trans   &trans     &trans                     &trans  &trans    &trans            &trans       &trans     &trans                &trans           &trans     &trans   &trans            &trans
                     &trans                     &trans  &sk LALT  &sk LEFT_CONTROL  &kp SPACE    &kp ENTER  &sk RIGHT_GUI         &sk RIGHT_SHIFT  &trans     &trans
             >;
