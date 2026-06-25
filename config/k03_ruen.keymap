@@ -146,9 +146,9 @@
             display-name = "Base";
             bindings = <
 &trans   &kp LSHFT  &word_backspace_behaviour  &kp P   &kp P     &kp G                                     &kp J                 &kp L            &kp U      &kp Y    &colon_semicolon  &trans
-&kp TAB  &kp A      &kp R                      &kp S   &kp T     &kp D                                     &backspace_behaviour  &kp N            &kp E      &kp I    &colon_semicolon  &kp SLASH
-&kp ESC  &kp Z      &kp X                      &kp C   &kp V     &kp B                                     &kp K                 &kp M            &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
-&trans   &trans     &trans                     &trans  &trans    &trans            &trans       &trans     &trans                &mo 2            &trans     &trans   &trans            &trans
+&kp ESC  &kp A      &kp R                      &kp S   &kp T     &kp D                                     &backspace_behaviour  &kp N            &kp E      &kp I    &colon_semicolon  &kp SLASH
+&kp TAB  &kp Z      &kp X                      &kp C   &kp V     &kp B                                     &kp K                 &kp M            &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
+&kp A    &kp A      &trans                     &trans  &kp A     &kp A             &trans       &trans     &kp A                 &kp A            &trans     &trans   &kp A             &kp A
                     &trans                     &trans  &sk LALT  &sk LEFT_CONTROL  &kp SPACE    &kp ENTER  &sk RIGHT_GUI         &sk RIGHT_SHIFT  &trans     &trans
             >;
 
@@ -163,11 +163,11 @@
 
         nav {
             bindings = <
-&kp F1   &kp F2          &kp F3          &kp F4        &kp F5         &kp F6                    &kp F7           &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans   &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END        &trans                    &trans           &kp N7  &kp N8  &kp N9   &trans   &trans
-&trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &trans                    &trans           &kp N4  &kp N5  &kp N6   &trans   &trans
-&kp F23  &trans          &kp LC(LEFT)    &trans        &kp LC(RIGHT)  &trans  &trans    &trans  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans   &trans
-                         &trans          &trans        &trans         &trans  &trans    &trans  &mo 1            &trans  &kp N0  &trans
+&trans   &trans          &trans          &trans        &trans         &trans                    &trans           &kp N7  &kp N8  &kp N9  &kp F10  &trans
+&trans   &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END        &trans                    &trans           &kp N4  &kp N5  &kp N6  &kp F11  &trans
+&trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &trans                    &kp N0           &kp N1  &kp N2  &kp N3  &kp F12  &trans
+&kp F23  &trans          &kp LC(LEFT)    &trans        &kp LC(RIGHT)  &trans  &trans    &trans  &kp PRINTSCREEN  &trans  &trans  &trans  &trans   &trans
+                         &trans          &trans        &trans         &trans  &trans    &trans  &mo 1            &trans  &trans  &trans
             >;
 
             display-name = "Nav";
