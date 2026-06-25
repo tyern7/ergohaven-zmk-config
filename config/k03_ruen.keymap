@@ -145,11 +145,11 @@
         layer_7 {
             display-name = "Base";
             bindings = <
-&none    &kp LSHFT  &word_backspace_behaviour  &kp P  &kp P     &kp G                             &kp J                 &kp L             &kp U      &kp Y    &colon_semicolon  &none
-&kp ESC  &kp A      &kp R                      &kp S  &kp T     &kp D                             &backspace_behaviour  &kp N             &kp E      &kp I    &colon_semicolon  &kp SLASH
-&kp TAB  &kp Z      &kp X                      &kp C  &kp V     &kp B                             &kp K                 &kp M             &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
-&kp A    &kp A      &none                      &none  &kp A     &kp A         &none        &none  &kp ENTER             &kp A             &none      &none    &kp A             &kp A
-                    &none                      &none  &sk LALT  &sk LEFT_GUI  &kp SPACE    &kp A  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &none      &none
+&none    &kp Q  &word_backspace_behaviour  &kp P  &kp P     &kp G                             &kp J                 &kp L             &kp U      &kp Y    &kp A             &none
+&kp ESC  &kp A  &kp R                      &kp S  &kp T     &kp D                             &backspace_behaviour  &kp N             &kp E      &kp I    &colon_semicolon  &kp SLASH
+&kp TAB  &kp Z  &kp X                      &kp C  &kp V     &kp B                             &kp K                 &kp M             &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
+&kp A    &kp A  &none                      &none  &kp A     &kp A         &none        &none  &kp ENTER             &kp A             &none      &none    &kp A             &kp A
+                &none                      &none  &sk LALT  &sk LEFT_GUI  &kp SPACE    &kp A  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &none      &none
             >;
 
             sensor-bindings =
@@ -161,13 +161,13 @@
                 <&enc_vol>;
         };
 
-        layer_6 {
+        sym_rowwise_esa {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1            &kp N2             &kp N3         &kp N4            &kp N5                    &kp N6  &kp N7     &kp N8     &kp N9          &kp N0           &trans
+&trans  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &trans                    &trans  &kp UNDER  &kp MINUS  &kp LEFT_BRACE  &kp QMARK        &trans
+&trans  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &trans                    &trans  &trans     &trans     &kp TILDE       &kp RIGHT_BRACE  &trans
+&trans  &trans            &trans             &trans         &trans            &trans  &trans    &trans  &trans  &trans     &trans     &trans          &trans           &trans
+                          &trans             &trans         &trans            &trans  &trans    &trans  &trans  &trans     &trans     &trans
             >;
         };
 
@@ -245,6 +245,16 @@
 &trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
 &trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
                       &trans        &trans        &trans       &to 3          &trans    &trans  &mo 3           &trans    &trans       &trans
+            >;
+        };
+
+        sym_rowwise {
+            bindings = <
+&trans  &kp N1            &kp N2             &kp N3    &kp N4     &kp N5                    &kp N6  &kp N7     &kp N8     &kp N9          &kp N0           &trans
+&trans  &trans            &kp RIGHT_BRACKET  &kp PLUS  &kp EQUAL  &trans                    &trans  &kp UNDER  &kp MINUS  &kp LEFT_BRACE  &kp TILDE        &trans
+&trans  &kp LEFT_BRACKET  &trans             &trans    &trans     &trans                    &trans  &trans     &trans     &trans          &kp RIGHT_BRACE  &trans
+&trans  &trans            &trans             &trans    &trans     &trans  &trans    &trans  &trans  &trans     &trans     &trans          &trans           &trans
+                          &trans             &trans    &trans     &trans  &trans    &trans  &trans  &trans     &trans     &trans
             >;
         };
     };
