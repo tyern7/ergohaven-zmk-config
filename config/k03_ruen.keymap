@@ -142,7 +142,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_7 {
+        layer_0 {
             display-name = "Base";
             bindings = <
 &none    &kp Q  &word_backspace_behaviour  &kp P  &kp P     &kp G                             &kp J                 &kp L             &kp U      &kp Y    &kp A             &none
@@ -184,11 +184,11 @@
 
         nav {
             bindings = <
-&trans   &trans          &trans          &trans        &trans         &trans                    &trans           &kp N7  &kp N8  &kp N9  &kp F10  &trans
-&trans   &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END        &trans                    &trans           &kp N4  &kp N5  &kp N6  &kp F11  &trans
-&trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &trans                    &kp N0           &kp N1  &kp N2  &kp N3  &kp F12  &trans
-&kp F23  &trans          &kp LC(LEFT)    &trans        &kp LC(RIGHT)  &trans  &trans    &trans  &kp PRINTSCREEN  &trans  &trans  &trans  &trans   &trans
-                         &trans          &trans        &trans         &trans  &trans    &trans  &mo 3            &trans  &trans  &trans
+&trans   &trans              &trans              &trans            &trans         &trans                    &trans           &kp N7  &kp N8  &kp N9  &kp F10  &trans
+&trans   &kp HOME            &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &trans                    &trans           &kp N4  &kp N5  &kp N6  &kp F11  &trans
+&trans   &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &trans                    &kp N0           &kp N1  &kp N2  &kp N3  &kp F12  &trans
+&kp F23  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &trans  &trans    &trans  &kp PRINTSCREEN  &trans  &trans  &trans  &trans   &trans
+                             &trans              &trans            &trans         &trans  &trans    &trans  &mo 3            &trans  &trans  &trans
             >;
 
             display-name = "Nav";
