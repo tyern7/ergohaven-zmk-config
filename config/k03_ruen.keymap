@@ -188,9 +188,9 @@
         sym_rowwise_esa {
             bindings = <
 &trans  &kp N1            &kp N2             &kp N3         &kp N4            &kp N5                    &kp N6  &kp N7     &kp N8     &kp N9          &kp N0           &trans
-&trans  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &trans                    &trans  &kp UNDER  &kp MINUS  &kp LEFT_BRACE  &kp QMARK        &trans
-&trans  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &trans                    &trans  &trans     &trans     &kp TILDE       &kp RIGHT_BRACE  &trans
-&trans  &trans            &trans             &trans         &trans            &trans  &trans    &trans  &trans  &trans     &trans     &trans          &trans           &trans
+&trans  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &trans                    &trans  &kp UNDER  &kp MINUS  &kp LEFT_BRACE  &kp QMARK        &kp F10
+&trans  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &trans                    &trans  &trans     &trans     &kp TILDE       &kp RIGHT_BRACE  &kp F11
+&trans  &trans            &trans             &trans         &trans            &trans  &trans    &trans  &trans  &trans     &trans     &trans          &trans           &kp F12
                           &trans             &trans         &trans            &trans  &trans    &trans  &trans  &trans     &trans     &trans
             >;
         };
