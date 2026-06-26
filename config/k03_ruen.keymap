@@ -155,10 +155,10 @@
 
         nav {
             bindings = <
-&none    &kp HOME            &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &none               &none            &kp N7  &kp N8  &kp N9  &kp F10  &none
+&none    &kp HOME            &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &none                     &none            &kp N7  &kp N8  &kp N9  &kp F10  &none
 &none    &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none                     &none            &kp N4  &kp N5  &kp N6  &kp F11  &none
 &none    &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none                     &kp N0           &kp N1  &kp N2  &kp N3  &kp F12  &none
-&kp F23  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none   &none     &none   &kp PRINTSCREEN  &none   &none   &none   &none    &none
+&kp F23  &none               &none               &none             &none          &none   &none     &none   &kp PRINTSCREEN  &none   &none   &none   &none    &none
                              &none               &none             &trans         &trans  &trans    &trans  &mo 1            &trans  &none   &none
             >;
 
@@ -248,6 +248,17 @@
                 <&enc_vol>,
                 <&enc_vol>,
                 <&enc_vol>;
+        };
+
+        non_number_and_non_shift {
+            display-name = "Nav";
+            bindings = <
+&none    &kp HOME            &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &none                     &none            &kp AMPERSAND  &kp ASTRK    &kp LPAR   &kp F10  &none
+&none    &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none                     &none            &kp DOLLAR     &kp PRCNT    &kp CARET  &kp F11  &none
+&none    &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none                     &kp RPAR         &kp EXCL       &kp AT_SIGN  &kp HASH   &kp F12  &none
+&kp F23  &none               &none               &none             &none          &none   &none     &none   &kp PRINTSCREEN  &none          &none        &none      &none    &none
+                             &none               &none             &trans         &trans  &trans    &trans  &none            &trans         &none        &none
+            >;
         };
     };
 };
