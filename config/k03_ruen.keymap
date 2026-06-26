@@ -151,14 +151,6 @@
 &kp A    &kp A  &none                      &none  &kp A     &kp A         &none        &none  &kp ENTER             &kp A             &none      &none    &kp A             &kp A
                 &none                      &none  &sk LALT  &sk LEFT_GUI  &kp SPACE    &kp A  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &none      &none
             >;
-
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
         };
 
         nav {
