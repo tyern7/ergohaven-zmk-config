@@ -89,7 +89,7 @@
         inverse_3: inverse_3 {
             compatible = "zmk,behavior-mod-morph";
             label = "INVERSE_3";
-            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_3>;
+            bindings = <&kp HASH>, <&kp KP_NUMBER_3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -98,7 +98,7 @@
         inverse_4: inverse_4 {
             compatible = "zmk,behavior-mod-morph";
             label = "INVERSE_4";
-            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_4>;
+            bindings = <&kp DOLLAR>, <&kp KP_NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -107,7 +107,7 @@
         inverse_5: inverse_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "INVERSE_5";
-            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_5>;
+            bindings = <&kp PERCENT>, <&kp KP_NUMBER_5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -116,7 +116,7 @@
         inverse_6: inverse_6 {
             compatible = "zmk,behavior-mod-morph";
             label = "INVERSE_6";
-            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_6>;
+            bindings = <&kp CARET>, <&kp KP_NUMBER_6>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -125,7 +125,7 @@
         inverse_7: inverse_7 {
             compatible = "zmk,behavior-mod-morph";
             label = "INVERSE_7";
-            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_7>;
+            bindings = <&kp AMPERSAND>, <&kp KP_NUMBER_7>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -134,27 +134,25 @@
         inverse_8: inverse_8 {
             compatible = "zmk,behavior-mod-morph";
             label = "INVERSE_8";
-            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_8>;
+            bindings = <&kp ASTERISK>, <&kp KP_NUMBER_8>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
 
         inverse_9: inverse_9 {
             compatible = "zmk,behavior-mod-morph";
-            label = "INVERSE_8";
-            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_9>;
+            label = "INVERSE_9";
+            bindings = <&kp LPAR>, <&kp KP_NUMBER_9>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
 
         inverse_0: inverse_0 {
             compatible = "zmk,behavior-mod-morph";
             label = "INVERSE_0";
-            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_0>;
+            bindings = <&kp RPAR>, <&kp KP_NUMBER_0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -240,18 +238,18 @@
 &none    &kp A  &word_backspace_behaviour  &kp F  &kp P     &kp G                             &kp J                 &kp L             &kp U      &kp Y    &kp A             &none
 &kp TAB  &kp Q  &kp R                      &kp S  &kp T     &kp D                             &backspace_behaviour  &kp N             &kp E      &kp I    &colon_semicolon  &kp SLASH
 &kp ESC  &kp A  &kp X                      &kp C  &kp V     &kp B                             &kp K                 &kp M             &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
-&kp A    &kp Z  &none                      &none  &kp A     &kp A         &none        &none  &kp ENTER             &kp A             &none      &none    &kp A             &kp A
+&kp A    &kp Z  &none                      &none  &kp A     &mo 1         &none        &none  &kp ENTER             &kp A             &none      &none    &kp A             &kp A
                 &none                      &none  &sk LALT  &sk LEFT_GUI  &kp SPACE    &mo 1  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &none      &none
             >;
         };
 
         sym_rowwise_esa {
             bindings = <
-&trans  &gresc            &kp N2             &kp N3         &kp N4            &kp N5                    &kp N6  &kp N7     &kp N8     &kp N9          &kp N0           &trans
-&trans  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &trans                    &trans  &kp UNDER  &kp MINUS  &kp LEFT_BRACE  &kp QMARK        &kp F10
-&trans  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &trans                    &trans  &trans     &trans     &kp TILDE       &kp RIGHT_BRACE  &kp F11
-&trans  &trans            &trans             &trans         &trans            &trans  &trans    &trans  &trans  &trans     &trans     &trans          &trans           &kp F12
-                          &trans             &trans         &none             &none   &none     &none   &none   &none      &trans     &trans
+&trans  &inverse_1        &inverse_2         &inverse_3     &inverse_4        &inverse_5                    &inverse_6  &inverse_7  &inverse_8  &inverse_9      &inverse_0       &trans
+&trans  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &trans                        &trans      &kp UNDER   &kp MINUS   &kp LEFT_BRACE  &kp QMARK        &kp F10
+&trans  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &trans                        &trans      &trans      &trans      &kp TILDE       &kp RIGHT_BRACE  &kp F11
+&trans  &trans            &trans             &trans         &trans            &trans      &trans    &trans  &trans      &trans      &trans      &trans          &trans           &kp F12
+                          &trans             &trans         &none             &none       &none     &none   &none       &none       &trans      &trans
             >;
         };
 
