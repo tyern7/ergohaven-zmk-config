@@ -85,6 +85,80 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        inverse_3: inverse_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_3";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverse_4: inverse_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_4";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverse_5: inverse_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_5";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverse_6: inverse_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_6";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverse_7: inverse_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_7";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverse_8: inverse_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_8";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+
+        inverse_9: inverse_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_8";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+
+        inverse_0: inverse_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_0";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
