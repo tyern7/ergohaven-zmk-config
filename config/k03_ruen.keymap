@@ -67,6 +67,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        inverse_1: inverse_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_1";
+            bindings = <&kp EXCL>, <&kp KP_NUMBER_1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        inverse_2: inverse_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "INVERSE_2";
+            bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -105,7 +123,7 @@
         layer_en: layer_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_en>;
+            bindings = <&to 2 &to_en>;
             label = "LAYER_EN";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -114,7 +132,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_ru>;
+            bindings = <&to 2 &to_ru>;
             label = "LAYER_RU";
             tap-ms = <30>;
             wait-ms = <0>;
@@ -145,11 +163,21 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&none    &kp A  &word_backspace_behaviour  &kp P  &kp P     &kp G                             &kp J                 &kp L             &kp U      &kp Y    &kp A             &none
+&none    &kp A  &word_backspace_behaviour  &kp F  &kp P     &kp G                             &kp J                 &kp L             &kp U      &kp Y    &kp A             &none
 &kp TAB  &kp Q  &kp R                      &kp S  &kp T     &kp D                             &backspace_behaviour  &kp N             &kp E      &kp I    &colon_semicolon  &kp SLASH
 &kp ESC  &kp A  &kp X                      &kp C  &kp V     &kp B                             &kp K                 &kp M             &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
 &kp A    &kp Z  &none                      &none  &kp A     &kp A         &none        &none  &kp ENTER             &kp A             &none      &none    &kp A             &kp A
-                &none                      &none  &sk LALT  &sk LEFT_GUI  &kp SPACE    &mo 3  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &none      &none
+                &none                      &none  &sk LALT  &sk LEFT_GUI  &kp SPACE    &mo 1  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &none      &none
+            >;
+        };
+
+        sym_rowwise_esa {
+            bindings = <
+&trans  &gresc            &kp N2             &kp N3         &kp N4            &kp N5                    &kp N6  &kp N7     &kp N8     &kp N9          &kp N0           &trans
+&trans  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &trans                    &trans  &kp UNDER  &kp MINUS  &kp LEFT_BRACE  &kp QMARK        &kp F10
+&trans  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &trans                    &trans  &trans     &trans     &kp TILDE       &kp RIGHT_BRACE  &kp F11
+&trans  &trans            &trans             &trans         &trans            &trans  &trans    &trans  &trans  &trans     &trans     &trans          &trans           &kp F12
+                          &trans             &trans         &none             &none   &none     &none   &none   &none      &trans     &trans
             >;
         };
 
@@ -159,7 +187,7 @@
 &none    &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none                     &none            &kp N4  &kp N5  &kp N6  &kp F11  &none
 &none    &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none                     &kp N0           &kp N1  &kp N2  &kp N3  &kp F12  &none
 &kp F23  &none               &none               &none             &none          &none   &none     &none   &kp PRINTSCREEN  &none   &none   &none   &none    &none
-                             &none               &none             &trans         &trans  &trans    &trans  &mo 1            &trans  &none   &none
+                             &none               &none             &trans         &trans  &trans    &trans  &mo 2            &trans  &none   &none
             >;
 
             display-name = "Nav";
@@ -171,20 +199,10 @@
 &trans       &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans            &trans        &trans        &studio_unlock
 &trans       &trans  &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &trans        &trans
 &trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &trans
-                     &trans  &trans  &trans  &trans  &trans    &trans  &mo 1         &trans        &trans            &trans
+                     &trans  &trans  &trans  &trans  &trans    &trans  &mo 2         &trans        &trans            &trans
             >;
 
             display-name = "Adjust";
-        };
-
-        sym_rowwise_esa {
-            bindings = <
-&trans  &kp N1            &kp N2             &kp N3         &kp N4            &kp N5                    &kp N6  &kp N7     &kp N8     &kp N9          &kp N0           &trans
-&trans  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &trans                    &trans  &kp UNDER  &kp MINUS  &kp LEFT_BRACE  &kp QMARK        &kp F10
-&trans  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &trans                    &trans  &trans     &trans     &kp TILDE       &kp RIGHT_BRACE  &kp F11
-&trans  &trans            &trans             &trans         &trans            &trans  &trans    &trans  &trans  &trans     &trans     &trans          &trans           &kp F12
-                          &trans             &trans         &none             &none   &none     &none   &none   &none      &trans     &trans
-            >;
         };
 
         sym_non_number {
@@ -227,7 +245,7 @@
 &trans  &trans        &en LT        &kp EQUAL     &en GT       &en GRAVE                        &trans          &en LBKT  &kp UNDER    &en RBKT  &trans      &trans
 &trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
 &trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                      &trans        &trans        &trans       &to 1          &trans    &trans  &mo 1           &trans    &trans       &trans
+                      &trans        &trans        &trans       &to 2          &trans    &trans  &mo 2           &trans    &trans       &trans
             >;
         };
 
@@ -238,7 +256,7 @@
 &kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSLH
 &kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RSHFT
-                                    &kp LGUI              &kp LALT            &kp LCTRL           &to 1               &kp SPACE             &kp ENTER                  &mo 1               &kp RCTRL                  &kp RALT             &kp RGUI
+                                    &kp LGUI              &kp LALT            &kp LCTRL           &to 2               &kp SPACE             &kp ENTER                  &mo 2               &kp RCTRL                  &kp RALT             &kp RGUI
             >;
 
             sensor-bindings =
