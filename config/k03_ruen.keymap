@@ -74,7 +74,7 @@
             bindings = <&kp EXCL>, <&kp KP_NUMBER_1>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         inverse_2: inverse_2 {
@@ -83,7 +83,7 @@
             bindings = <&kp AT_SIGN>, <&kp KP_NUMBER_2>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         inverse_3: inverse_3 {
@@ -92,7 +92,7 @@
             bindings = <&kp HASH>, <&kp KP_NUMBER_3>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         inverse_4: inverse_4 {
@@ -101,7 +101,7 @@
             bindings = <&kp DOLLAR>, <&kp KP_NUMBER_4>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         inverse_5: inverse_5 {
@@ -110,7 +110,7 @@
             bindings = <&kp PERCENT>, <&kp KP_NUMBER_5>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         inverse_6: inverse_6 {
