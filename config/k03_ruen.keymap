@@ -245,11 +245,11 @@
 
         sym_rowwise_esa {
             bindings = <
-&none  &inverse_1        &inverse_2         &inverse_3     &inverse_4        &inverse_5                  &inverse_6  &inverse_7  &inverse_8  &inverse_9      &inverse_0       &none
-&none  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &none                       &none       &kp UNDER   &kp MINUS   &kp LEFT_BRACE  &kp QMARK        &none
-&to 0  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &none                       &none       &none       &none       &kp TILDE       &kp RIGHT_BRACE  &none
-&none  &none             &none              &none          &none             &none       &none    &none  &none       &none       &none       &none           &none            &none
-                         &none              &none          &none             &none       &none    &mo 2  &mo 3       &none       &none       &none
+&none  &inverse_1        &inverse_2         &inverse_3     &inverse_4        &inverse_5                  &inverse_6      &inverse_7  &inverse_8  &inverse_9      &inverse_0       &none
+&none  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &none                       &none           &kp UNDER   &kp MINUS   &kp LEFT_BRACE  &kp QMARK        &none
+&to 0  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &none                       &none           &none       &none       &kp TILDE       &kp RIGHT_BRACE  &none
+&none  &none             &none              &none          &none             &none       &none    &none  &none           &none       &none       &none           &none            &none
+                         &none              &none          &none             &none       &none    &mo 2  &kp LEFT_SHIFT  &none       &none       &none
             >;
         };
 
