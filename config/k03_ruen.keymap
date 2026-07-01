@@ -238,7 +238,7 @@
 &none    &kp A  &word_backspace_behaviour  &kp F  &kp P     &kp G                             &kp J                 &kp L             &kp U      &kp Y    &kp A             &none
 &kp TAB  &kp Q  &kp R                      &kp S  &kp T     &kp D                             &backspace_behaviour  &kp N             &kp E      &kp I    &colon_semicolon  &kp SLASH
 &kp ESC  &kp A  &kp X                      &kp C  &kp V     &kp B                             &kp K                 &kp M             &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
-&kp A    &kp Z  &none                      &none  &kp A     &mo 1         &none        &none  &kp ENTER             &kp A             &none      &none    &key_repeat       &kp A
+&kp A    &kp Z  &none                      &none  &kp A     &mo 1         &mo 3        &none  &kp ENTER             &kp A             &none      &none    &key_repeat       &kp A
                 &none                      &none  &sk LALT  &sk LEFT_GUI  &kp SPACE    &mo 2  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &none      &none
             >;
         };
