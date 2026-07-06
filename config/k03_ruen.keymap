@@ -62,7 +62,7 @@
         colon_semicolon: colon_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COLON_SEMICOLON";
-            bindings = <&kp COLON>, <&kp SEMICOLON>;
+            bindings = <&kp LS(SEMICOLON)>, <&kp SEMICOLON>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
