@@ -300,7 +300,7 @@
 &none  &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none                  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &kp F11  &none
 &to 0  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none                  &kp KP_NUMBER_0  &mac_f1          &kp KP_NUMBER_2  &kp KP_NUMBER_3      &kp F12  &none
 &none  &none               &none               &none             &none          &none  &none    &none  &kp PRINTSCREEN  &none            &none            &none                &none    &none
-                           &none               &none             &none          &none  &none    &mo 1  &none            &kp F23          &none            &none
+                           &none               &none             &none          &none  &none    &mo 1  &kp LEFT_SHIFT   &none            &none            &none
             >;
 
             display-name = "Nav";
