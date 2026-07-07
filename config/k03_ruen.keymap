@@ -184,6 +184,100 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mac_f2: mac_f2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F2";
+            bindings = <&kp C_BRIGHTNESS_INC>, <&kp F2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mac_f3: mac_f3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F3";
+            bindings = <&kp F13>, <&kp F3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mac_f4: mac_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F4";
+            bindings = <&kp F14>, <&kp F4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mac_f5: mac_f5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F5";
+            bindings = <&kp F15>, <&kp F5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mac_f6: mac_f6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F6";
+            bindings = <&kp F16>, <&kp F6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mac_f7: mac_f7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F7";
+            bindings = <&kp C_NEXT>, <&kp F7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mac_f8: mac_f8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F8";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&kp C_PAUSE>, <&kp F8>;
+        };
+
+        mac_f9: mac_f9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F9";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&kp C_NEXT>, <&kp F9>;
+        };
+
+        mac_f10: mac_f10 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F10";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&kp C_MUTE>, <&kp F10>;
+        };
+
+        mac_f11: mac_f11 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F11";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&kp C_VOLUME_DOWN>, <&kp F11>;
+        };
+
+        mac_f12: mac_f12 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F12";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+            bindings = <&kp C_VOLUME_UP>, <&kp F12>;
+        };
     };
 
     combos {
