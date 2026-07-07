@@ -228,6 +228,20 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        nvim_toggle_repl: nvim_toggle_dap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp R &kp R>;
+            label = "NVIM_TOGGLE_DAP";
+        };
+
+        nvim_toggle_dap: nvim_toggle_de {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp D &kp U>;
+            label = "NVIM_TOGGLE_DE";
+        };
     };
 
     keymap {
@@ -280,11 +294,11 @@
 
         nvim {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans             &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &nvim_toggle_dap  &nvim_toggle_repl  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans             &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans            &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
