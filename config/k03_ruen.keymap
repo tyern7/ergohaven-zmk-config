@@ -260,7 +260,7 @@
 &none  &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none                  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &kp F11  &none
 &to 0  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none                  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3      &kp F12  &none
 &none  &none               &none               &none             &none          &none  &none    &none  &kp PRINTSCREEN  &none            &none            &none                &none    &none
-                           &none               &none             &none          &none  &none    &mo 1  &kp F23          &none            &none            &none
+                           &none               &none             &none          &none  &none    &mo 1  &kp F23          &kp F23          &none            &none
             >;
 
             display-name = "Nav";
@@ -276,6 +276,16 @@
             >;
 
             display-name = "Adjust";
+        };
+
+        nvim {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         sym_non_number {
