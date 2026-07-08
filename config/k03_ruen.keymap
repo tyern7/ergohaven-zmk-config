@@ -244,7 +244,7 @@
             label = "MAC_F8";
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-            bindings = <&kp C_PAUSE>, <&kp F8>;
+            bindings = <&kp LG(C_PLAY_PAUSE)>, <&kp F8>;
         };
 
         mac_f9: mac_f9 {
