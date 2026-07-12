@@ -278,6 +278,87 @@
             mods = <(MOD_LSFT)>;
             bindings = <&kp C_VOLUME_UP>, <&kp F12>;
         };
+
+        mac_f1_and_1: mac_f1_and_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F1_AND_1";
+            bindings = <&mac_f1>, <&kp KP_NUMBER_1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        mac_f2_and_2: mac_f2_and_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F2_AND_2";
+            bindings = <&mac_f2>, <&kp KP_NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        mac_f3_and_3: mac_f3_and_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F3_AND_3";
+            bindings = <&mac_f3>, <&kp KP_NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        mac_f4_and_4: mac_f4_and_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F4_AND_4";
+            bindings = <&mac_f4>, <&kp KP_NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        mac_f5_and_5: mac_f5_and_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F5_AND_5";
+            bindings = <&mac_f5>, <&kp KP_NUMBER_5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        mac_f6_and_6: mac_f6_and_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F6_AND_6";
+            bindings = <&mac_f6>, <&kp KP_NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        mac_f7_and_7: mac_f7_and_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F7_AND_7";
+            bindings = <&mac_f7>, <&kp KP_NUMBER_7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        mac_f8_and_8: mac_f8_and_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F8_AND_8";
+            bindings = <&mac_f8>, <&kp KP_NUMBER_8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        mac_f9_and_9: mac_f9_and_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAC_F9_AND_9";
+            bindings = <&mac_f9>, <&kp KP_NUMBER_9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     combos {
