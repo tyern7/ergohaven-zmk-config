@@ -282,7 +282,7 @@
         mac_f1_and_1: mac_f1_and_1 {
             compatible = "zmk,behavior-mod-morph";
             label = "MAC_F1_AND_1";
-            bindings = <&mac_f1>, <&kp KP_NUMBER_1>;
+            bindings = <&mac_f1>, <&kp N1>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -291,7 +291,7 @@
         mac_f2_and_2: mac_f2_and_2 {
             compatible = "zmk,behavior-mod-morph";
             label = "MAC_F2_AND_2";
-            bindings = <&mac_f2>, <&kp KP_NUMBER_2>;
+            bindings = <&mac_f2>, <&kp N2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -300,7 +300,7 @@
         mac_f3_and_3: mac_f3_and_3 {
             compatible = "zmk,behavior-mod-morph";
             label = "MAC_F3_AND_3";
-            bindings = <&mac_f3>, <&kp KP_NUMBER_3>;
+            bindings = <&mac_f3>, <&kp N3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -309,7 +309,7 @@
         mac_f4_and_4: mac_f4_and_4 {
             compatible = "zmk,behavior-mod-morph";
             label = "MAC_F4_AND_4";
-            bindings = <&mac_f4>, <&kp KP_NUMBER_4>;
+            bindings = <&mac_f4>, <&kp N4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -318,7 +318,7 @@
         mac_f5_and_5: mac_f5_and_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "MAC_F5_AND_5";
-            bindings = <&mac_f5>, <&kp KP_NUMBER_5>;
+            bindings = <&mac_f5>, <&kp N5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -327,7 +327,7 @@
         mac_f6_and_6: mac_f6_and_6 {
             compatible = "zmk,behavior-mod-morph";
             label = "MAC_F6_AND_6";
-            bindings = <&mac_f6>, <&kp KP_NUMBER_6>;
+            bindings = <&mac_f6>, <&kp N6>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
