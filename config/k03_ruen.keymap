@@ -501,11 +501,11 @@
 
         nav {
             bindings = <
-&none  &kp HOME            &kp PAGE_DOWN     &kp PAGE_UP         &kp END        &none                              &none            &mac_f7_and_7  &mac_f8_and_8  &mac_f9_and_9  &mac_f10  &none
-&none  &kp LEFT_ARROW      &kp UP_ARROW      &kp DOWN_ARROW      &kp RIGHT      &none                              &none            &mac_f4_and_4  &mac_f5_and_5  &mac_f6_and_6  &mac_f11  &none
-&to 0  &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &none                              &zero_and_zero   &mac_f1_and_1  &mac_f2_and_2  &mac_f3_and_3  &mac_f12  &none
-&none  &none               &none             &none               &none          &mo 1     &kp LEFT_SHIFT    &none  &kp PRINTSCREEN  &none          &none          &none          &none     &kp LSHIFT
-                           &none             &none               &kp LEFT_ALT   &kp LGUI  &none             &none  &none            &none          &none          &none
+&none           &kp HOME            &kp PAGE_DOWN     &kp PAGE_UP         &kp END        &none                              &none            &mac_f7_and_7  &mac_f8_and_8  &mac_f9_and_9  &mac_f10  &none
+&none           &kp LEFT_ARROW      &kp UP_ARROW      &kp DOWN_ARROW      &kp RIGHT      &none                              &none            &mac_f4_and_4  &mac_f5_and_5  &mac_f6_and_6  &mac_f11  &none
+&to 0           &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &none                              &zero_and_zero   &mac_f1_and_1  &mac_f2_and_2  &mac_f3_and_3  &mac_f12  &none
+&kp LEFT_SHIFT  &none               &none             &none               &none          &mo 1     &kp LEFT_SHIFT    &none  &kp PRINTSCREEN  &none          &none          &none          &none     &kp LSHIFT
+                                    &none             &none               &kp LEFT_ALT   &kp LGUI  &none             &none  &none            &none          &none          &none
             >;
 
             display-name = "Nav";
