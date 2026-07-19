@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -472,6 +473,20 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_5>;
             label = "MAC_SCREENSHOT_WINDOW";
+        };
+
+        mb5_scrollUP: mb5_scrollUP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB5 &msc SCRL_UP>;
+            label = "MB5_SCROLLUP";
+        };
+
+        mb5_scrollDOWN: mb5_scrollDOWN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB5 &msc SCRL_UP>;
+            label = "MB5_SCROLLDOWN";
         };
     };
 
