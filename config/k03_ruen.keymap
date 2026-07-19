@@ -478,15 +478,8 @@
         mb5_scrollUP: mb5_scrollUP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp MB5 &msc SCRL_UP>;
+            bindings = <&mkp MB5>;
             label = "MB5_SCROLLUP";
-        };
-
-        mb5_scrollDOWN: mb5_scrollDOWN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mkp MB5 &msc SCRL_UP>;
-            label = "MB5_SCROLLDOWN";
         };
     };
 
