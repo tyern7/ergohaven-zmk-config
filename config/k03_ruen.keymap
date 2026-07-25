@@ -521,11 +521,11 @@
 
         adj {
             bindings = <
-&bootloader  &none  &none  &none  &none          &none                  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4  &bt BT_CLR_ALL
-&none        &none  &none  &none  &kp LC(LG(Q))  &none                  &none         &mac_screenshot_full  &mac_screenshot_area  &mac_screenshot_panel  &none         &studio_unlock
-&to 0        &none  &none  &none  &none          &none                  &out OUT_BLE  &none                 &none                 &none                  &none         &none
-&none        &none  &none  &none  &none          &none  &none    &none  &out OUT_USB  &none                 &none                 &none                  &none         &none
-                    &none  &none  &none          &none  &none    &none  &none         &none                 &none                 &none
+&none  &none  &none  &none  &none          &none                  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4  &bt BT_CLR_ALL
+&none  &none  &none  &none  &kp LC(LG(Q))  &none                  &bootloader   &mac_screenshot_full  &mac_screenshot_area  &mac_screenshot_panel  &none         &studio_unlock
+&to 0  &none  &none  &none  &none          &none                  &out OUT_BLE  &none                 &none                 &none                  &none         &none
+&none  &none  &none  &none  &none          &none  &none    &none  &out OUT_USB  &none                 &none                 &none                  &none         &none
+              &none  &none  &none          &none  &none    &none  &none         &none                 &none                 &none
             >;
 
             display-name = "Adjust";
