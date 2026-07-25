@@ -489,11 +489,11 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&none    &kp A  &word_backspace_behaviour  &kp F  &kp P      &kp G                                            &kp J                 &kp L             &kp U      &kp Y    &kp A             &none
-&none    &kp Q  &kp R                      &kp S  &kp T      &kp D                                            &backspace_behaviour  &kp N             &kp E      &kp I    &colon_semicolon  &none
-&kp ESC  &kp A  &kp X                      &kp C  &kp V      &kp B                                            &kp K                 &kp M             &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
-&kp TAB  &kp Z  &none                      &none  &kp LG(C)  &layer_morph_1_5  &none        &none             &kp ENTER             &kp LG(V)         &none      &none    &key_repeat       &kp SLASH
-                &none                      &none  &sk LALT   &sk LEFT_GUI      &kp SPACE    &layer_morph_2_4  &sk LEFT_SHIFT        &sk LEFT_CONTROL  &none      &none
+&none    &kp A  &word_backspace_behaviour  &kp F  &kp P      &kp G                                                &kp J                 &kp L              &kp U      &kp Y    &kp A             &none
+&none    &kp Q  &kp R                      &kp S  &kp T      &kp D                                                &backspace_behaviour  &kp N              &kp E      &kp I    &colon_semicolon  &none
+&kp ESC  &kp A  &kp X                      &kp C  &kp V      &kp B                                                &kp K                 &kp M              &kp COMMA  &kp DOT  &kp O             &kp BACKSLASH
+&kp TAB  &kp Z  &none                      &none  &kp LG(C)  &layer_morph_1_5  &none        &kp C_AC_SCROLL_DOWN  &kp ENTER             &kp K_SCROLL_DOWN  &none      &none    &key_repeat       &kp SLASH
+                &none                      &none  &sk LALT   &sk LEFT_GUI      &kp SPACE    &layer_morph_2_4      &sk LEFT_SHIFT        &sk LEFT_CONTROL   &none      &none
             >;
         };
 
