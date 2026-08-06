@@ -577,11 +577,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans  &trans        &en AT        &en DLLR      &en HASH     &trans                           &trans          &trans    &en CARET    &trans    &trans      &trans
-&trans  &trans        &en LT        &kp EQUAL     &en GT       &en GRAVE                        &trans          &en LBKT  &kp UNDER    &en RBKT  &trans      &trans
-&to 0   &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
-&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                      &trans        &trans        &trans       &to 2          &trans    &trans  &mo 2           &trans    &trans       &trans
+&none  &none         &en AT        &en DLLR      &en HASH     &none                          &none           &none     &en CARET    &none     &none       &none
+&none  &none         &en LT        &kp EQUAL     &en GT       &en GRAVE                      &none           &en LBKT  &kp UNDER    &en RBKT  &none       &none
+&to 0  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                       &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
+&none  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &none    &none  &none           &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &none
+                     &none         &none         &none        &to 2          &none    &none  &mo 2           &none     &none        &none
             >;
         };
 
