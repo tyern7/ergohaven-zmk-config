@@ -535,7 +535,7 @@
             bindings = <
 &none  &none  &none  &none             &none              &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &nvim_toggle_dap  &nvim_toggle_repl  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none             &none              &none                  &none  &none  &none  &none  &none  &none
+&to 0  &none  &none  &none             &none              &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none             &none              &none  &none    &none  &none  &none  &none  &none  &none  &none
               &none  &none             &none              &none  &none    &none  &none  &none  &none  &none
             >;
@@ -545,7 +545,7 @@
             bindings = <
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&to 0  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
               &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
             >;
@@ -556,7 +556,7 @@
             bindings = <
 &none  &none      &none   &none      &none     &none                      &none  &none     &none      &none     &none    &none
 &none  &none      &kp LT  &kp EQUAL  &kp GT    &kp GRAVE                  &none  &kp LBKT  &kp UNDER  &kp RBKT  &none    &none
-&none  &kp BSLH   &none   &kp MINUS  &none     &kp PLUS                   &none  &kp LBRC  &kp SEMI   &kp RBRC  &none    &kp QUESTION
+&to 0  &kp BSLH   &none   &kp MINUS  &none     &kp PLUS                   &none  &kp LBRC  &kp SEMI   &kp RBRC  &none    &kp QUESTION
 &none  &kp COMMA  &none   &kp COLON  &kp FSLH  &none      &none    &none  &none  &kp PIPE  &kp TILDE  &none     &kp DOT  &none
                   &none   &none      &none     &none      &none    &none  &none  &none     &none      &none
             >;
@@ -566,7 +566,7 @@
             bindings = <
 &none  &none      &kp AT    &kp DLLR   &kp HASH  &none                      &none      &none     &kp CARET  &none     &none     &none
 &none  &none      &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                  &none      &kp LBKT  &kp UNDER  &kp RBKT  &none     &none
-&none  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                   &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
+&to 0  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                   &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
 &none  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &none      &none    &none  &none      &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &none
                   &none     &none      &none     &none      &none    &none  &none      &none     &none      &none
             >;
@@ -579,7 +579,7 @@
             bindings = <
 &trans  &trans        &en AT        &en DLLR      &en HASH     &trans                           &trans          &trans    &en CARET    &trans    &trans      &trans
 &trans  &trans        &en LT        &kp EQUAL     &en GT       &en GRAVE                        &trans          &en LBKT  &kp UNDER    &en RBKT  &trans      &trans
-&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
+&to 0   &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
 &trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
                       &trans        &trans        &trans       &to 2          &trans    &trans  &mo 2           &trans    &trans       &trans
             >;
@@ -609,7 +609,7 @@
             bindings = <
 &none    &kp HOME            &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &none                  &none            &kp AMPERSAND  &kp ASTRK    &kp LPAR   &kp F10  &none
 &none    &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none                  &none            &kp DOLLAR     &kp PRCNT    &kp CARET  &kp F11  &none
-&none    &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none                  &kp RPAR         &kp EXCL       &kp AT_SIGN  &kp HASH   &kp F12  &none
+&to 0    &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none                  &kp RPAR         &kp EXCL       &kp AT_SIGN  &kp HASH   &kp F12  &none
 &kp F23  &none               &none               &none             &none          &none  &none    &none  &kp PRINTSCREEN  &none          &none        &none      &none    &none
                              &none               &none             &none          &none  &none    &none  &none            &none          &none        &none
             >;
