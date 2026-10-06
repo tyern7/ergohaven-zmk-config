@@ -489,10 +489,10 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&none    &kp ESC  &kp W  &kp E  &kp R  &kp T                  &kp Y  &kp U  &kp I      &kp O    &kp P        &none
-&none    &kp Q    &kp S  &kp D  &kp F  &kp G                  &kp H  &kp J  &kp K      &kp L    &kp SEMI     &none
-&kp ESC  &kp A    &kp X  &kp C  &kp V  &kp B                  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH     &kp BSPC
-&kp TAB  &kp Z    &none  &none  &none  &none  &none    &none  &none  &none  &none      &none    &key_repeat  &kp SLASH
+&none    &kp ESC  &kp W  &kp E  &kp R  &kp T                  &kp Y  &kp U  &kp I      &kp O    &kp P     &none
+&none    &kp Q    &kp S  &kp D  &kp F  &kp G                  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &none
+&kp ESC  &kp A    &kp X  &kp C  &kp V  &kp B                  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
+&kp TAB  &kp Z    &none  &none  &none  &none  &none    &none  &none  &none  &none      &none    &none     &none
                   &none  &none  &none  &none  &none    &none  &none  &none  &none      &none
             >;
         };
