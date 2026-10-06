@@ -2,7 +2,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -162,7 +161,7 @@
         layer_morph_2_4: layer_morph_2_4 {
             compatible = "zmk,behavior-mod-morph";
             label = "LAYER_MORPH_2_4";
-            bindings = <&mo 2>, <&mo 4>;
+            bindings = <&mo 2>, <&mo 0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -171,7 +170,7 @@
         layer_morph_1_5: layer_morph_1_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "LAYER_MORPH_1_5";
-            bindings = <&mo 1>, <&mo 5>;
+            bindings = <&mo 1>, <&mo 0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -489,11 +488,11 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&none    &kp Q  &kp W  &kp E  &kp R         &kp T                                             &kp Y          &kp U             &kp I      &kp O    &kp P     &none
-&none    &kp A  &kp S  &kp D  &kp F         &kp G                                             &kp H          &kp J             &kp K      &kp L    &kp SEMI  &none
-&kp ESC  &kp Z  &kp X  &kp C  &kp V         &kp B                                             &kp N          &kp M             &kp COMMA  &kp DOT  &kp FSLH  &none
-&kp TAB  &none  &none  &none  &none         &bt BT_SEL 0      &bt BT_SEL 1    &kp TAB         &kp ENTER      &none             &none      &none    &none     &none
-                &none  &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE       &kp LEFT_SHIFT  &kp BACKSPACE  &kp LEFT_CONTROL  &none      &none
+&none    &kp Q         &kp W         &kp E  &kp R         &kp T                                             &kp Y          &kp U             &kp I      &kp O    &kp P     &none
+&none    &kp A         &kp S         &kp D  &kp F         &kp G                                             &kp H          &kp J             &kp K      &kp L    &kp SEMI  &none
+&kp ESC  &kp Z         &kp X         &kp C  &kp V         &kp B                                             &kp N          &kp M             &kp COMMA  &kp DOT  &kp FSLH  &none
+&kp TAB  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none         &bt BT_SEL 0      &bt BT_SEL 1    &kp TAB         &kp ENTER      &none             &none      &none    &none     &none
+                       &none         &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE       &kp LEFT_SHIFT  &kp BACKSPACE  &kp LEFT_CONTROL  &none      &none
             >;
         };
 
@@ -509,110 +508,14 @@
 
         nav {
             bindings = <
-&none           &kp HOME            &kp PAGE_DOWN     &kp PAGE_UP         &kp END        &none                              &none            &mac_f7_and_7  &mac_f8_and_8  &mac_f9_and_9  &mac_f10  &none
-&none           &kp LEFT_ARROW      &kp UP_ARROW      &kp DOWN_ARROW      &kp RIGHT      &mkp MB5                           &none            &mac_f4_and_4  &mac_f5_and_5  &mac_f6_and_6  &mac_f11  &none
-&to 0           &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &none                              &kp KP_NUMBER_0  &mac_f1_and_1  &mac_f2_and_2  &mac_f3_and_3  &mac_f12  &none
-&kp LEFT_SHIFT  &none               &none             &none               &none          &mo 1     &kp LEFT_SHIFT    &none  &none            &none          &none          &none          &none     &kp LSHIFT
-                                    &none             &none               &kp LEFT_ALT   &kp LGUI  &kp SPACE         &none  &none            &none          &none          &none
+&none  &kp HOME            &kp PAGE_DOWN     &kp PAGE_UP         &kp END        &none                            &none            &mac_f7_and_7  &mac_f8_and_8  &mac_f9_and_9  &mac_f10  &none
+&none  &kp LEFT_ARROW      &kp UP_ARROW      &kp DOWN_ARROW      &kp RIGHT      &kp PRINTSCREEN                  &none            &mac_f4_and_4  &mac_f5_and_5  &mac_f6_and_6  &mac_f11  &none
+&none  &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &none                            &kp KP_NUMBER_0  &mac_f1_and_1  &mac_f2_and_2  &mac_f3_and_3  &mac_f12  &none
+&none  &none               &none             &none               &none          &none            &none    &none  &none            &none          &none          &none          &none     &none
+                           &none             &none               &none          &none            &none    &none  &none            &none          &none          &none
             >;
 
             display-name = "Nav";
-        };
-
-        adj {
-            bindings = <
-&none  &none  &none  &none  &none          &none                  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4  &bt BT_CLR_ALL
-&none  &none  &none  &none  &kp LC(LG(Q))  &none                  &bootloader   &mac_screenshot_full  &mac_screenshot_area  &mac_screenshot_panel  &none         &studio_unlock
-&to 0  &none  &none  &none  &none          &none                  &out OUT_BLE  &none                 &none                 &none                  &none         &none
-&none  &none  &none  &none  &none          &none  &none    &none  &out OUT_USB  &none                 &none                 &none                  &none         &none
-              &none  &none  &none          &none  &none    &none  &none         &none                 &none                 &none
-            >;
-
-            display-name = "Adjust";
-        };
-
-        nvim {
-            bindings = <
-&none  &none  &none  &none             &none              &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &nvim_toggle_dap  &nvim_toggle_repl  &none                  &none  &none  &none  &none  &none  &none
-&to 0  &none  &none  &none             &none              &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none             &none              &none  &none    &none  &none  &none  &none  &none  &none  &none
-              &none  &none             &none              &none  &none    &none  &none  &none  &none  &none
-            >;
-        };
-
-        mouse {
-            bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&to 0  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-            >;
-        };
-
-        sym_non_number {
-            display-name = "Symbols";
-            bindings = <
-&none  &none      &none   &none      &none     &none                      &none  &none     &none      &none     &none    &none
-&none  &none      &kp LT  &kp EQUAL  &kp GT    &kp GRAVE                  &none  &kp LBKT  &kp UNDER  &kp RBKT  &none    &none
-&to 0  &kp BSLH   &none   &kp MINUS  &none     &kp PLUS                   &none  &kp LBRC  &kp SEMI   &kp RBRC  &none    &kp QUESTION
-&none  &kp COMMA  &none   &kp COLON  &kp FSLH  &none      &none    &none  &none  &kp PIPE  &kp TILDE  &none     &kp DOT  &none
-                  &none   &none      &none     &none      &none    &none  &none  &none     &none      &none
-            >;
-        };
-
-        sym_en_reference {
-            bindings = <
-&none  &none      &kp AT    &kp DLLR   &kp HASH  &none                      &none      &none     &kp CARET  &none     &none     &none
-&none  &none      &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                  &none      &kp LBKT  &kp UNDER  &kp RBKT  &none     &none
-&to 0  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                   &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&none  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &none      &none    &none  &none      &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &none
-                  &none     &none      &none     &none      &none    &none  &none      &none     &none      &none
-            >;
-
-            display-name = "Symbols";
-        };
-
-        sym_ru {
-            display-name = "Symbols";
-            bindings = <
-&none  &none         &en AT        &en DLLR      &en HASH     &none                          &none           &none     &en CARET    &none     &none       &none
-&none  &none         &en LT        &kp EQUAL     &en GT       &en GRAVE                      &none           &en LBKT  &kp UNDER    &en RBKT  &none       &none
-&to 0  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                       &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
-&none  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &none    &none  &none           &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &none
-                     &none         &none         &none        &to 2          &none    &none  &mo 2           &none     &none        &none
-            >;
-        };
-
-        ru {
-            display-name = "Ru";
-            bindings = <
-&kp GRAVE  &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                                               &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0               &kp BSPC
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp BSLH
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RSHFT
-                                    &kp LGUI              &kp LALT            &kp LCTRL           &to 2               &kp SPACE             &kp ENTER                  &mo 2               &kp RCTRL                  &kp RALT             &kp RGUI
-            >;
-
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
-        };
-
-        non_number_and_non_shift {
-            display-name = "Nav";
-            bindings = <
-&none    &kp HOME            &kp PAGE_DOWN       &kp PAGE_UP       &kp END        &none                  &none            &kp AMPERSAND  &kp ASTRK    &kp LPAR   &kp F10  &none
-&none    &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT      &none                  &none            &kp DOLLAR     &kp PRCNT    &kp CARET  &kp F11  &none
-&to 0    &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &none                  &kp RPAR         &kp EXCL       &kp AT_SIGN  &kp HASH   &kp F12  &none
-&kp F23  &none               &none               &none             &none          &none  &none    &none  &kp PRINTSCREEN  &none          &none        &none      &none    &none
-                             &none               &none             &none          &none  &none    &none  &none            &none          &none        &none
-            >;
         };
     };
 
