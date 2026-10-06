@@ -498,11 +498,11 @@
 
         sym_rowwise_esa {
             bindings = <
-&none  &kp AT_SIGN  &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN  &kp GRAVE                  &kp CARET  &kp DQT         &kp UNDER  &inverse_9       &inverse_0  &none
-&none  &kp BSLH     &kp LPAR       &kp MINUS  &kp RPAR          &kp PLUS                   &kp PRCNT  &kp LEFT_BRACE  &kp SEMI   &kp RIGHT_BRACE  &none       &none
-&none  &kp HASH     &kp ASTRK      &kp COLON  &kp FSLH          &none                      &none      &kp PIPE        &kp TILDE  &kp AMPERSAND    &kp DOLLAR  &none
-&none  &none        &none          &none      &none             &none      &none    &none  &none      &none           &none      &none            &none       &none
-                    &none          &none      &none             &none      &none    &none  &none      &none           &none      &none
+&none  &kp AT_SIGN  &kp LESS_THAN  &kp EQUAL  &kp GREATER_THAN  &kp GRAVE                  &kp CARET  &kp LEFT_BRACKET  &kp UNDER  &kp RIGHT_BRACKET  &inverse_0  &none
+&none  &kp BSLH     &kp LPAR       &kp MINUS  &kp RPAR          &kp PLUS                   &kp PRCNT  &kp LEFT_BRACE    &kp SEMI   &kp RIGHT_BRACE    &none       &none
+&none  &kp HASH     &kp ASTRK      &kp COLON  &kp FSLH          &none                      &none      &kp PIPE          &kp TILDE  &kp AMPERSAND      &kp DOLLAR  &none
+&none  &none        &none          &none      &none             &none      &none    &none  &none      &none             &none      &none              &none       &none
+                    &none          &none      &none             &none      &none    &none  &none      &none             &none      &none
             >;
         };
 
