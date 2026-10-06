@@ -488,11 +488,11 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&none    &kp Q         &kp W         &kp E  &kp R         &kp T                                             &kp Y          &kp U             &kp I      &kp O    &kp P     &none
-&none    &kp A         &kp S         &kp D  &kp F         &kp G                                             &kp H          &kp J             &kp K      &kp L    &kp SEMI  &none
-&kp ESC  &kp Z         &kp X         &kp C  &kp V         &kp B                                             &kp N          &kp M             &kp COMMA  &kp DOT  &kp FSLH  &none
-&kp TAB  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none         &bt BT_SEL 0      &bt BT_SEL 1    &kp TAB         &kp ENTER      &none             &none      &none    &none     &none
-                       &none         &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE       &kp LEFT_SHIFT  &kp BACKSPACE  &kp LEFT_CONTROL  &none      &none
+&none    &kp Q         &kp W         &kp E  &kp R         &kp T                                          &kp Y          &kp U             &kp I      &kp O    &kp P     &none
+&none    &kp A         &kp S         &kp D  &kp F         &kp G                                          &kp H          &kp J             &kp K      &kp L    &kp SEMI  &none
+&kp ESC  &kp Z         &kp X         &kp C  &kp V         &kp B                                          &kp N          &kp M             &kp COMMA  &kp DOT  &kp FSLH  &none
+&kp TAB  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none         &mo 2             &mo 1        &kp TAB         &kp ENTER      &none             &none      &none    &none     &none
+                       &none         &none  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &kp LEFT_SHIFT  &kp BACKSPACE  &kp LEFT_CONTROL  &none      &none
             >;
         };
 
@@ -508,11 +508,11 @@
 
         nav {
             bindings = <
-&none  &kp HOME            &kp PAGE_DOWN     &kp PAGE_UP         &kp END        &none                            &none            &mac_f7_and_7  &mac_f8_and_8  &mac_f9_and_9  &mac_f10  &none
-&none  &kp LEFT_ARROW      &kp UP_ARROW      &kp DOWN_ARROW      &kp RIGHT      &kp PRINTSCREEN                  &none            &mac_f4_and_4  &mac_f5_and_5  &mac_f6_and_6  &mac_f11  &none
-&none  &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &none                            &kp KP_NUMBER_0  &mac_f1_and_1  &mac_f2_and_2  &mac_f3_and_3  &mac_f12  &none
-&none  &none               &none             &none               &none          &none            &none    &none  &none            &none          &none          &none          &none     &none
-                           &none             &none               &none          &none            &none    &none  &none            &none          &none          &none
+&none  &kp HOME            &kp PAGE_DOWN     &kp PAGE_UP         &kp END        &none                            &none   &kp N7  &kp N8  &kp N9  &mac_f10  &none
+&none  &kp LEFT_ARROW      &kp UP_ARROW      &kp DOWN_ARROW      &kp RIGHT      &kp PRINTSCREEN                  &none   &kp N4  &kp N5  &kp N6  &mac_f11  &none
+&none  &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &none                            &kp N0  &kp N1  &kp N2  &kp N3  &mac_f12  &none
+&none  &none               &none             &none               &none          &none            &none    &none  &none   &none   &none   &none   &none     &none
+                           &none             &none               &none          &none            &none    &none  &none   &none   &none   &none
             >;
 
             display-name = "Nav";
