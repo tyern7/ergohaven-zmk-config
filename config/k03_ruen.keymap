@@ -543,11 +543,11 @@
 
         mouse {
             bindings = <
-&kp LS(A)  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none      &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&to 0      &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none      &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&kp A  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&to 0  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+              &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
             >;
         };
 
