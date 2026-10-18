@@ -489,7 +489,7 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&none    &studio_unlock  &word_backspace_behaviour  &kp E  &kp R         &kp T                                          &kp Y             &kp U             &kp I      &kp O    &kp P             &none
+&none    &studio_unlock  &word_backspace_behaviour  &kp E  &kp R         &kp T                                          &kp Y             &kp U             &kp I      &kp O    &kp BACKSPACE     &none
 &none    &kp Q           &kp S                      &kp D  &kp F         &kp G                                          &kp H             &kp J             &kp K      &kp L    &kp P             &none
 &kp ESC  &kp A           &kp X                      &kp C  &kp V         &kp B                                          &kp N             &kp M             &kp COMMA  &kp DOT  &colon_semicolon  &kp BACKSLASH
 &kp TAB  &kp Z           &none                      &none  &kp LG(C)     &layer_morph_1_5  &lt 4 ESC    &bt BT_CLR_ALL  &kp ENTER         &bt BT_SEL 0      &none      &none    &kp O             &kp SLASH
