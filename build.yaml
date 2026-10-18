@@ -11,8 +11,6 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: k03_left_ruen-ergohaven-zmk
-    shield: <existing shields> raw_hid_adapter # <-- required for Raw HID support
-    snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
   - board: ergohaven
     shield: k03_right
   - board: ergohaven
