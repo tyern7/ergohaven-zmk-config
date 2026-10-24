@@ -162,7 +162,7 @@
         layer_morph_2_4: layer_morph_2_4 {
             compatible = "zmk,behavior-mod-morph";
             label = "LAYER_MORPH_2_4";
-            bindings = <&mo 1>, <&mo 0>;
+            bindings = <&mo 3>, <&mo 0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -171,7 +171,7 @@
         layer_morph_1_5: layer_morph_1_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "LAYER_MORPH_1_5";
-            bindings = <&mo 2>, <&mo 0>;
+            bindings = <&mo 1>, <&mo 0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -407,7 +407,7 @@
         layer_en: layer_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_en>;
+            bindings = <&to 3 &to_en>;
             label = "LAYER_EN";
             wait-ms = <0>;
             tap-ms = <30>;
@@ -416,7 +416,7 @@
         layer_ru: layer_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 1 &to_ru>;
+            bindings = <&to 3 &to_ru>;
             label = "LAYER_RU";
             tap-ms = <30>;
             wait-ms = <0>;
@@ -493,7 +493,17 @@
 &none    &none    &kp S                      &kp D  &kp F         &kp G                      &kp H           &kp J     &kp K      &kp L    &none             &none
 &kp Q    &kp A    &kp X                      &kp C  &kp V         &kp B                      &kp N           &kp M     &kp COMMA  &kp DOT  &colon_semicolon  &kp P
 &kp TAB  &kp Z    &none                      &none  &none         &none      &none    &none  &none           &none     &none      &none    &kp BACKSLASH     &kp SLASH
-                  &none                      &none  &sk LEFT_ALT  &kp SPACE  &mo 1    &mo 2  &kp LEFT_SHIFT  &sk LALT  &none      &none
+                  &none                      &none  &sk LEFT_ALT  &kp SPACE  &mo 3    &mo 1  &kp LEFT_SHIFT  &sk LALT  &none      &none
+            >;
+        };
+
+        sym_rowwise_esa {
+            bindings = <
+&none  &inverse_1  &inverse_2        &inverse_3     &inverse_4        &inverse_5                      &inverse_6      &inverse_7         &inverse_8        &inverse_9    &inverse_0        &none
+&none  &kp TILDE   &kp GRAVE         &kp SQT        &kp DQT           &kp MINUS                       &kp PLUS        &sk LEFT_SHIFT     &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &none
+&none  &kp NUBS    &kp LEFT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &none                           &none           &none              &kp PIPE          &kp TILDE     &kp RIGHT_BRACE   &none
+&none  &none       &none             &none          &none             &none           &none    &none  &none           &none              &none             &none         &none             &none
+                   &none             &none          &none             &kp LEFT_SHIFT  &none    &mo 3  &kp LEFT_SHIFT  &kp LS(BACKSPACE)  &none             &none
             >;
         };
 
@@ -502,21 +512,11 @@
 &none           &kp HOME            &kp PAGE_DOWN     &kp PAGE_UP         &kp END        &none                              &none            &mac_f7_and_7  &mac_f8_and_8  &mac_f9_and_9  &mac_f10  &none
 &none           &kp LEFT_ARROW      &kp UP_ARROW      &kp DOWN_ARROW      &kp RIGHT      &mkp MB5                           &none            &mac_f4_and_4  &mac_f5_and_5  &mac_f6_and_6  &mac_f11  &none
 &to 0           &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &none                              &kp KP_NUMBER_0  &mac_f1_and_1  &mac_f2_and_2  &mac_f3_and_3  &mac_f12  &none
-&kp LEFT_SHIFT  &none               &none             &none               &none          &mo 2     &kp LEFT_SHIFT    &none  &none            &none          &none          &none          &none     &kp LSHIFT
+&kp LEFT_SHIFT  &none               &none             &none               &none          &mo 1     &kp LEFT_SHIFT    &none  &none            &none          &none          &none          &none     &kp LSHIFT
                                     &none             &none               &kp LEFT_ALT   &kp LGUI  &kp SPACE         &none  &none            &none          &none          &none
             >;
 
             display-name = "Nav";
-        };
-
-        sym_rowwise_esa {
-            bindings = <
-&none  &inverse_1        &inverse_2         &inverse_3     &inverse_4        &inverse_5                      &inverse_6      &inverse_7         &inverse_8  &inverse_9      &inverse_0       &none
-&none  &kp SEMI          &kp RIGHT_BRACKET  &kp PLUS       &kp EQUAL         &none                           &none           &kp UNDER          &kp MINUS   &kp LEFT_BRACE  &kp QMARK        &none
-&to 0  &kp LEFT_BRACKET  &kp PIPE           &kp LESS_THAN  &kp GREATER_THAN  &none                           &none           &none              &kp PIPE    &kp TILDE       &kp RIGHT_BRACE  &none
-&none  &none             &none              &none          &none             &none           &none    &none  &none           &none              &none       &none           &none            &none
-                         &none              &none          &none             &kp LEFT_SHIFT  &none    &mo 1  &kp LEFT_SHIFT  &kp LS(BACKSPACE)  &none       &none
-            >;
         };
 
         adj {
@@ -568,8 +568,8 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <2 1>;
-            then-layer = <3>;
+            if-layers = <1 3>;
+            then-layer = <4>;
         };
     };
 };
