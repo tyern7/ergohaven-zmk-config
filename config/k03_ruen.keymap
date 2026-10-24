@@ -509,11 +509,11 @@
 
         nav {
             bindings = <
-&none  &kp LC(TAB)         &kp LA(TAB)       &kp LG(TAB)         &none          &none                              &none            &mac_f7_and_7  &mac_f8_and_8  &mac_f9_and_9  &mac_f10  &none
-&none  &kp LEFT_ARROW      &kp UP_ARROW      &kp DOWN_ARROW      &kp RIGHT      &mkp MB5                           &none            &mac_f4_and_4  &mac_f5_and_5  &mac_f6_and_6  &mac_f11  &none
-&none  &kp LA(LEFT_ARROW)  &kp LA(UP_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(RIGHT)  &none                              &kp KP_NUMBER_0  &mac_f1_and_1  &mac_f2_and_2  &mac_f3_and_3  &mac_f12  &none
-&none  &none               &none             &none               &none          &mo 1     &kp LEFT_SHIFT    &none  &none            &none          &none          &none          &none     &kp LSHIFT
-                           &none             &none               &kp LEFT_ALT   &kp LGUI  &kp SPACE         &none  &none            &none          &none          &none
+&none  &kp LC(TAB)      &kp LA(TAB)   &kp LG(TAB)           &none            &kp ESC                        &kp ESC    &mac_f7_and_7  &mac_f8_and_8  &mac_f9_and_9  &mac_f10  &none
+&none  &kp LEFT_GUI     &kp LEFT_ALT  &kp LS(LEFT_CONTROL)  &kp LEFT_SHIFT   &kp ENTER                      &kp ENTER  &mac_f4_and_4  &mac_f5_and_5  &mac_f6_and_6  &mac_f11  &none
+&none  &kp LA(LS(TAB))  &none         &none                 &kp PRINTSCREEN  &kp TAB                        &kp TAB    &mac_f1_and_1  &mac_f2_and_2  &mac_f3_and_3  &mac_f12  &none
+&none  &none            &none         &none                 &none            &none      &none        &none  &none      &none          &none          &none          &none     &kp LSHIFT
+                        &none         &none                 &kp LEFT_ALT     &kp LGUI   &kp SPACE    &none  &none      &none          &none          &none
             >;
 
             display-name = "Nav";
