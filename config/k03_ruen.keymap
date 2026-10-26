@@ -502,7 +502,7 @@
 &none    &none    &kp S                      &kp D  &kp F             &kp G                      &kp H           &kp J                 &kp K      &kp L    &none             &none
 &kp Q    &kp A    &kp X                      &kp C  &kp V             &kp B                      &kp N           &kp M                 &kp COMMA  &kp DOT  &colon_semicolon  &kp P
 &kp TAB  &kp Z    &none                      &none  &none             &none      &none    &none  &none           &none                 &none      &none    &kp BACKSLASH     &kp SLASH
-                  &none                      &none  &sk LEFT_CONTROL  &kp SPACE  &mo 4    &mo 1  &kp LEFT_SHIFT  &hold_tap 4 LEFT_ALT  &none      &none
+                  &none                      &none  &sk LEFT_CONTROL  &kp SPACE  &mo 2    &mo 1  &kp LEFT_SHIFT  &hold_tap 4 LEFT_ALT  &none      &none
             >;
         };
 
@@ -512,7 +512,7 @@
 &none           &kp TILDE         &kp GRAVE          &kp SQT        &kp DQT           &kp MINUS                   &kp PLUS    &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT    &sk LEFT_COMMAND  &none
 &kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &kp UNDER                   &kp EQUAL   &none           &kp PIPE          &kp LEFT_BRACE  &kp RIGHT_BRACE   &sk LEFT_SHIFT
 &none           &none             &none              &none          &none             &none       &none    &none  &none       &none           &none             &none           &none             &none
-                                  &none              &none          &none             &kp SPACE   &none    &none  &none       &none           &none             &none
+                                  &none              &none          &none             &kp SPACE   &mo 2    &none  &none       &none           &none             &none
             >;
         };
 
@@ -522,7 +522,7 @@
 &none  &kp LEFT_GUI     &kp LEFT_ALT  &kp LS(LEFT_CONTROL)  &kp LEFT_SHIFT   &kp ENTER                      &kp ENTER  &kp LEFT_ARROW  &kp DOWN    &kp UP       &kp PAGE_DOWN    &none
 &none  &kp LA(LS(TAB))  &none         &none                 &kp PRINTSCREEN  &kp TAB                        &kp TAB    &kp LA(LEFT)    &kp LA(UP)  &kp LA(UP)   &kp RIGHT_ARROW  &none
 &none  &none            &none         &none                 &none            &none      &none        &none  &none      &none           &none       &none        &kp LA(RIGHT)    &none
-                        &none         &none                 &kp LEFT_ALT     &kp LGUI   &kp SPACE    &none  &none      &none           &none       &none
+                        &none         &none                 &kp LEFT_ALT     &kp LGUI   &kp SPACE    &mo 1  &none      &none           &none       &none
             >;
 
             display-name = "Nav";
