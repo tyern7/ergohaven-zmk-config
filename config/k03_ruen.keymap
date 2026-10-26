@@ -526,11 +526,11 @@
 
         nav {
             bindings = <
-&none  &none            &kp LA(TAB)   &kp LG(TAB)           &none            &kp ESC                        &kp ESC    &kp HOME        &kp END     &kp PAGE_UP  &kp DELETE       &none
-&none  &kp LC(TAB)      &sk LEFT_ALT  &sk LEFT_CONTROL      &sk LEFT_SHIFT   &kp ENTER                      &kp ENTER  &kp LEFT_ARROW  &kp DOWN    &kp UP       &kp PAGE_DOWN    &none
-&none  &sk LEFT_GUI     &none         &none                 &kp PRINTSCREEN  &kp TAB                        &kp TAB    &kp LA(LEFT)    &kp LA(UP)  &kp LA(UP)   &kp RIGHT_ARROW  &none
-&none  &kp LA(LS(TAB))  &none         &none                 &none            &none      &none        &none  &none      &none           &none       &none        &kp LA(RIGHT)    &none
-                        &none         &none                 &kp LEFT_ALT     &kp LGUI   &kp SPACE    &mo 1  &none      &none           &none       &none
+&none  &none            &kp LA(TAB)   &kp LG(TAB)       &none            &kp ESC                    &kp ESC    &kp HOME        &kp END     &kp PAGE_UP  &kp DELETE       &none
+&none  &kp LC(TAB)      &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT   &kp ENTER                  &kp ENTER  &kp LEFT_ARROW  &kp DOWN    &kp UP       &kp PAGE_DOWN    &none
+&none  &sk LEFT_GUI     &none         &none             &kp PRINTSCREEN  &kp TAB                    &kp TAB    &kp LA(LEFT)    &kp LA(UP)  &kp LA(UP)   &kp RIGHT_ARROW  &none
+&none  &kp LA(LS(TAB))  &none         &none             &none            &none      &none    &none  &none      &none           &none       &none        &kp LA(RIGHT)    &none
+                        &none         &none             &none            &none      &none    &mo 1  &none      &none           &none       &none
             >;
 
             display-name = "Nav";
