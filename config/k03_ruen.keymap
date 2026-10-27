@@ -539,11 +539,11 @@
 
         num {
             bindings = <
-&none  &none         &kp N2        &kp N3            &kp N4          &kp N5                   &kp N6   &kp N7          &kp N8            &kp N9        &none         &none
-&none  &kp N1        &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp F11                  &kp F12  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &kp N0        &none
-&none  &sk LEFT_GUI  &kp F2        &kp F3            &kp F4          &kp F5                   &kp F6   &kp F7          &kp F8            &kp F9        &sk LEFT_GUI  &none
-&none  &kp F1        &none         &none             &none           &none    &none    &none  &none    &none           &none             &none         &kp F10       &none
-                     &none         &none             &none           &none    &none    &none  &none    &none           &none             &none
+&none           &none         &kp N2        &kp N3            &kp N4          &kp N5                    &kp N6    &kp N7          &kp N8            &kp N9        &none         &none
+&none           &kp N1        &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &mac_f11                  &mac_f12  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &kp N0        &none
+&kp LEFT_SHIFT  &sk LEFT_GUI  &mac_f2       &mac_f3           &mac_f4         &mac_f5                   &mac_f6   &mac_f7         &mac_f8           &mac_f9       &sk LEFT_GUI  &kp LEFT_SHIFT
+&none           &mac_f1       &none         &none             &none           &none     &none    &none  &none     &none           &none             &none         &mac_f10      &none
+                              &none         &none             &none           &none     &none    &none  &none     &none           &none             &none
             >;
         };
 
