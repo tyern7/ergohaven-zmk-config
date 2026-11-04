@@ -18,13 +18,5 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: k03_qube-ergohaven-zmk
-
-  - board: ergohaven
-    shield: k03_left_remap
-    keymap: remapped
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: k03_left_ruen-ergohaven-zmk
-
   - board: ergohaven
     shield: settings_reset
