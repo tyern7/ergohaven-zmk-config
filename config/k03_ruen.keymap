@@ -507,7 +507,7 @@
             display-name = "Base";
             bindings = <
 &none  &none  &none                      &none  &none             &none                            &none                 &none                 &none      &none    &none             &none
-&none  &none  &word_backspace_behaviour  &kp E  &kp R             &kp T                            &kp Y                 &kp U                 &kp I      &kp O    &none             &none
+&none  &kp Q  &word_backspace_behaviour  &kp E  &kp R             &kp T                            &kp Y                 &kp U                 &kp I      &kp O    &kp P             &none
 &none  &kp Q  &kp S                      &kp D  &kp F             &kp G                            &backspace_behaviour  &kp J                 &kp K      &kp L    &kp P             &none
 &kp Z  &kp A  &kp X                      &kp C  &kp V             &kp B      &kp ESC    &kp ENTER  &kp N                 &kp M                 &kp COMMA  &kp DOT  &colon_semicolon  &kp SLASH
               &none                      &none  &sk LEFT_CONTROL  &kp SPACE  &mo 2      &la 1      &kp LEFT_SHIFT        &hold_tap 4 LEFT_ALT  &none      &none
